@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>RoomAssignment</title>
+	<link rel="stylesheet" type="text/css" media="all"
+		  href="../CSS/mystyle.css" th:href="@{/css/mystyle.css}" />
+</head>
+<body>
+<div align="right">
+	<a th:href="@{/Logout}">Logout</a>
+</div>
+<div align="right">
+	<a th:href="@{/Calhandar}">Calhandar</a>
+</div>
+
+<h1>Room Assignment Page</h1>
+
+<p th:text = "'The event you have added has been confirmed on date ' + ${commitment.getFormattedDate(commitment.getDate())} + ' from ' + ${commitment.getTime(commitment.getStartTime())} + ' to ' + ${commitment.getTime(commitment.getEndTime())} + ' in the physical room ' + ${room}"></p>
+<button style=""><a href="Calhandar" >Okay</a></button>
+
+</body>
+</html>

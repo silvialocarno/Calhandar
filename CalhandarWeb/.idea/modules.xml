@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CalhandarEJB/CalhandarEJB.iml" filepath="$PROJECT_DIR$/../CalhandarEJB/CalhandarEJB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalhandarWeb.iml" filepath="$PROJECT_DIR$/CalhandarWeb.iml" />
+    </modules>
+  </component>
+</project>
