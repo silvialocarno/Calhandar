@@ -24,7 +24,7 @@ import java.util.List;
 public class GoToAddCommitmentPage extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private TemplateEngine templateEngine;
-	@EJB(name = "it.polimi.db2.calhandar.services/UserService")
+	@EJB(name = "it.polimi.db2.calhandar.services/ProfessorService")
 	private ProfessorService professorService;
 
 	public GoToAddCommitmentPage() {

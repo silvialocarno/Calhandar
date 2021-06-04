@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="CalhandarEJB:ejb">
+    <output-path>$PROJECT_DIR$/../CalhandarEJB/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CalhandarEJB</module>
+        <packaging>ejb</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CalhandarEJB-0.0.1-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="CalhandarEJB:ejb exploded" />
+    </root>
+  </artifact>
+</component>

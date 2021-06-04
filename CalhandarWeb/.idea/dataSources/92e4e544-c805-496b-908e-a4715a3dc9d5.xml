@@ -989,7 +989,7 @@ SELECT|sys.sys_config
     </column>
     <column id="310" parent="290" name="room">
       <Position>12</Position>
-      <DataType>varchar(10)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
     </column>
     <column id="311" parent="290" name="subject">
       <Position>13</Position>
@@ -1144,7 +1144,7 @@ subject</ColNames>
     </foreign-key>
     <column id="342" parent="294" name="roomId">
       <Position>1</Position>
-      <DataType>varchar(10)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="343" parent="294" name="PRIMARY">
@@ -1181,77 +1181,82 @@ subject</ColNames>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="350" parent="295" name="PRIMARY">
+    <column id="350" parent="295" name="password">
+      <Position>7</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="351" parent="295" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>email</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="351" parent="296" name="studentEmail">
+    <column id="352" parent="296" name="studentEmail">
       <Position>1</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="352" parent="296" name="commitmentId">
+    <column id="353" parent="296" name="commitmentId">
       <Position>2</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="353" parent="296" name="commitmentId_idx">
+    <index id="354" parent="296" name="commitmentId_idx">
       <ColNames>commitmentId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="354" parent="296" name="PRIMARY">
+    <key id="355" parent="296" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>studentEmail
 commitmentId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="355" parent="296" name="studentMail">
+    <foreign-key id="356" parent="296" name="studentMail">
       <ColNames>studentEmail</ColNames>
       <RefTableName>student</RefTableName>
       <RefColNames>email</RefColNames>
     </foreign-key>
-    <foreign-key id="356" parent="296" name="commitmentId">
+    <foreign-key id="357" parent="296" name="commitmentId">
       <ColNames>commitmentId</ColNames>
       <RefTableName>commitment</RefTableName>
       <RefColNames>commitmentId</RefColNames>
     </foreign-key>
-    <column id="357" parent="297" name="studentEmail">
+    <column id="358" parent="297" name="studentEmail">
       <Position>1</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="358" parent="297" name="subject">
+    <column id="359" parent="297" name="subject">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="359" parent="297" name="subject_idx">
+    <index id="360" parent="297" name="subject_idx">
       <ColNames>subject</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="360" parent="297" name="PRIMARY">
+    <key id="361" parent="297" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>studentEmail
 subject</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="361" parent="297" name="studentEmail">
+    <foreign-key id="362" parent="297" name="studentEmail">
       <ColNames>studentEmail</ColNames>
       <RefTableName>student</RefTableName>
       <RefColNames>email</RefColNames>
     </foreign-key>
-    <foreign-key id="362" parent="297" name="subject">
+    <foreign-key id="363" parent="297" name="subject">
       <ColNames>subject</ColNames>
       <RefTableName>subject</RefTableName>
       <RefColNames>subjectId</RefColNames>
     </foreign-key>
-    <column id="363" parent="298" name="subjectId">
+    <column id="364" parent="298" name="subjectId">
       <Position>1</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="364" parent="298" name="PRIMARY">
+    <key id="365" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>subjectId</ColNames>
       <Primary>1</Primary>
